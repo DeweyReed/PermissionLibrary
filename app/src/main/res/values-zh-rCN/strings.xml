@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">权限图书馆</string>
+
+    <string name="pager_title_app">应用</string>
+    <string name="pager_title_group">分类</string>
+    <string name="pager_title_apk">安装包</string>
+
+    <string name="app_detail_version_template">版本号: %d\n版本名: %s</string>
+    <string name="app_detail_apk_location_template">位置: %s</string>
+
+    <string name="crash_email_subject">嘿，我找到一个权限图书馆的Bug!</string>
+    <string name="crash_title">权限图书馆崩溃啦！</string>
+    <string name="crash_content">可以把崩溃日志发送给我吗？\n这样我就可以修理它了。</string>
+    <string name="crash_restart">重启应用</string>
+    <string name="crash_detail">崩溃详情</string>
+    <string name="crash_send">通过邮件发送</string>
+
+    <plurals name="list_item_perm_count" formatted="false">
+        <item quantity="other"><xliff:g example="7" id="number">%d</xliff:g> 个权限</item>
+    </plurals>
+
+    <plurals name="list_item_app_count" formatted="false">
+        <item quantity="other"><xliff:g example="7" id="number">%d</xliff:g> 个应用</item>
+    </plurals>
+
+    <string name="label_system">系统应用</string>
+    <string name="label_system_explanation">手机生产商设定的不能被删除或只能被停用的应用。</string>
+    <string name="label_disabled">已停用</string>
+    <string name="label_dangerous_permission">高危权限</string>
+    <string name="label_dangerous_permission_explanation">这些权限与你的敏感和隐私信息有关。恶意应用可能使用它们破坏你的手机或窃取私人数据。</string>
+    <string name="label_change_permissions">修改权限</string>
+
+    <string name="help_title">帮助</string>
+
+    <string name="action_filter">过滤应用</string>
+    <string name="label_normal">正常应用</string>
+
+    <string name="help_item_system_app">什么是系统应用？</string>
+    <string name="help_item_lost_perm">为什么一些权限没有解释？</string>
+    <string name="help_item_lost_perm_content">
+        1. 一些是为了兼容旧的系统版本。\n
+        2. 一些是特定应用的私有(自用)权限\n
+    </string>
+    <string name="help_item_dangerous_permissions">什么是高危权限？</string>
+
+    <string name="label_lost_perm">缺失解释</string>
+    <string name="help_item_change_permissions">我可以在权限图书馆中修改应用权限吗？</string>
+    <string name="help_item_change_permissions_content">不可以。只有系统设置可以。因此，点击一个应用详情的右上角的扳手图标可以快速进入系统设置。</string>
+
+    <string name="about_title">关于</string>
+
+    <string name="first_time_launch_text">初次启动时间可能会长一点 :)</string>
+
+    <string name="list_empty">无内容</string>
+
+    <string name="action_title_install_app">安装应用</string>
+    <string name="fail_to_pick_apk">未找到文件管理应用。选择APK失败。</string>
+
+    <string name="permission_external_storage">查找APK需要读取外部储存的权限</string>
+    <string name="permission_delete_apk">删除APK需要写入外部储存的权限</string>
+
+    <string name="permission_state_on">已启用</string>
+    <string name="permission_state_off">已关闭</string>
+
+    <string name="rate_title">你喜欢权限图书馆吗？</string>
+    <string name="rate_content">打分并留下你的评价,你的建议可能被采纳出现在以后的版本里呦</string>
+    <string name="rate_later">稍后吧</string>
+    <string name="rate_no">不</string>
+
+    <string name="update_title">更新内容</string>
+    <string-array name="update_items">
+        <item><h>【优化】</h>移除了一些多余的动画</item>
+        <item><h>【优化】</h>下滑重新加载应用和安装包</item>
+        <item><h>【优化】</h>点击安装包位置打开文件管理器浏览(点了没反应？需要装一个文件管理器)</item>
+    </string-array>
+
+    <!--<string name="notify_setting_title">通知</string>-->
+    <!--<string name="notify_setting_on">通知已开启</string>-->
+    <!--<string name="notify_setting_off">通知已关闭</string>-->
+    <!--<string name="notify_channel_name">查看新安装应用权限的通知</string>-->
+    <!--<string name="notify_title">查看 %s 的权限</string>-->
+    <!--<string name="notify_content">检查潜在的危险权限</string>-->
+
+    <string name="action_title_app_setting">应用设置</string>
+    <string name="action_title_show_perm_detail">权限详情</string>
+
+    <string name="action_title_delete_apk">删除安装包</string>
+    <string name="delete_apk_assure">确定删除此安装包？</string>
+    <string name="delete_apk_ok">安装包已删除</string>
+    <string name="delete_apk_fails">删除失败</string>
+
+    <string name="group_desp_calendar">日历</string>
+    <string name="group_desp_camera">相机</string>
+    <string name="group_desp_contacts">通讯录</string>
+    <string name="group_desp_location">位置信息</string>
+    <string name="group_desp_microphone">麦克风</string>
+    <string name="group_desp_phone">电话</string>
+    <string name="group_desp_sensors">身体传感器</string>
+    <string name="group_desp_sms">短信</string>
+    <string name="group_desp_storage">存储空间</string>
+    <string name="group_desp_network">网络</string>
+    <string name="group_desp_other1">其他</string>
+    <string name="group_desp_launcher">快捷方式相关</string>
+    <string name="group_desp_guess">根据内容猜用途</string>
+    <string name="group_desp_removed">向前兼容</string>
+    <string name="group_desp_other">其他的其他</string>
+
+    <string-array name="perm_item_copy_options">
+        <item>复制名称</item>
+        <item>复制短简介</item>
+        <item>复制长简介</item>
+        <item>复制全部</item>
+    </string-array>
+
+    <string name="permlab_accessCoarseLocation">访问大致位置信息（以网络为依据）</string>
+    <string name="permdesc_accessCoarseLocation">此应用可根据网络来源（例如基站和 WLAN 网络）获取您的位置信息。您的手机必须支持并开启这些位置信息服务，此应用才能使用这些服务。</string>
+
+    <string name="permlab_accessFineLocation">访问确切位置信息（以 GPS 和网络为依据）</string>
+    <string name="permdesc_accessFineLocation">此应用可根据 GPS 或网络来源（例如基站和 WLAN 网络）获取您的位置信息。您的手机必须支持并开启这些位置信息服务，此应用才能使用这些服务。这可能会增加耗电量。</string>
+
+    <string name="permlab_accessLocationExtraCommands">获取额外的位置信息提供程序命令</string>
+    <string name="permdesc_accessLocationExtraCommands">允许该应用使用其他的位置信息提供程序命令。此权限使该应用可以干扰GPS或其他位置信息源的运作。</string>
+
+    <string name="permlab_addVoicemail">添加语音邮件</string>
+    <string name="permdesc_addVoicemail">允许应用在您的语音信箱中留言。</string>
+
+    <string name="permlab_answerPhoneCalls">接听来电</string>
+    <string name="permdesc_answerPhoneCalls">允许该应用接听来电。</string>
+
+    <string name="permlab_bodySensors">访问身体传感器（如心率监测器）</string>
+    <string name="permdesc_bodySensors">允许该应用存取监测您身体状况的传感器所收集的数据，例如您的心率。</string>
+
+    <string name="permlab_callPhone">拨打电话</string>
+    <string name="permdesc_callPhone">允许该应用在您未执行操作的情况下拨打电话号码。此权限可能会导致意外收费或呼叫。请注意，此权限不允许该应用拨打紧急电话号码。恶意应用可通过拨打电话产生相关费用，而无需您的确认。</string>
+
+    <string name="permlab_camera">拍摄照片和视频</string>
+    <string name="permdesc_camera">此应用可随时使用相机拍摄照片和录制视频。</string>
+
+    <string name="permlab_getAccounts">查找设备上的帐号</string>
+    <string name="permdesc_getAccounts">允许该应用获取手机已知的帐号列表，其中可能包括由已安装的应用创建的所有帐号。</string>
+
+    <string name="permlab_manageOwnCalls">通过系统转接来电</string>
+    <string name="permdesc_manageOwnCalls">允许该应用通过系统转接来电，以改善通话体验。</string>
+
+    <string name="permlab_processOutgoingCalls">重新设置外拨电话的路径</string>
+    <string name="permdesc_processOutgoingCalls">允许应用在拨出电话时查看拨打的电话号码，并选择改为拨打其他号码或完全中止通话。</string>
+
+    <string name="permlab_readCalendar">读取日历活动和详情</string>
+    <string name="permdesc_readCalendar">此应用可读取您手机上存储的所有日历活动，并分享或保存您的日历数据。</string>
+
+    <string name="permlab_readCallLog">读取通话记录</string>
+    <string name="permdesc_readCallLog">此应用可读取您的通话记录。</string>
+
+    <string name="permlab_readContacts">读取联系人</string>
+    <string name="permdesc_readContacts">允许该应用读取您手机上存储的联系人的相关数据，包括您通过打电话、发送电子邮件或以其他方式与特定个人通信的频率。此权限可让应用保存您的联系人数据，而恶意应用可能会在您不知情的情况下分享联系人数据。</string>
+
+    <string name="permlab_readExternalStorage">读取您的SD卡中的内容</string>
+    <string name="permdesc_readExternalStorage">允许应用读取您SD卡的内容。</string>
+
+    <string name="permlab_readPhoneNumbers">读取电话号码</string>
+    <string name="permdesc_readPhoneNumbers">允许该应用访问设备上的电话号码。</string>
+
+    <string name="permlab_readPhoneState">读取手机状态和身份</string>
+    <string name="permdesc_readPhoneState">允许该应用访问设备的电话功能。此权限可让该应用确定本机号码和设备 ID、是否正处于通话状态以及拨打的号码。</string>
+
+    <string name="permlab_readSms">读取短信</string>
+    <string name="permdesc_readSms">此应用可读取您手机上存储的所有短信。</string>
+
+    <string name="permlab_receiveMms">接收讯息（彩信）</string>
+    <string name="permdesc_receiveMms">允许该应用接收和处理彩信。这就意味着，该应用可能会监视发送到您设备的彩信，或删除发送到您设备的彩信而不向您显示。</string>
+
+    <string name="permlab_receiveSms">接收讯息（短信）</string>
+    <string name="permdesc_receiveSms">允许该应用接收和处理短信。这就意味着，该应用可能会监视发送到您设备的短信，或删除发送到您设备的短信而不向您显示。</string>
+
+    <string name="permlab_receiveWapPush">接收讯息 (WAP)</string>
+    <string name="permdesc_receiveWapPush">允许该应用接收和处理 WAP 消息。此权限包括监视发送给您的消息或删除发送给您的消息而不向您显示的功能。</string>
+
+    <string name="permlab_recordAudio">录音</string>
+    <string name="permdesc_recordAudio">此应用可随时使用麦克风进行录音。</string>
+
+    <string name="permlab_sendSms">发送短信</string>
+    <string name="permdesc_sendSms">允许该应用发送短信。此权限可能会导致意外收费。恶意应用可能会未经您的确认而发送短信，由此产生相关费用。</string>
+
+    <string name="permlab_useFingerprint">使用指纹硬件</string>
+    <string name="permdesc_useFingerprint">允许该应用使用指纹硬件进行身份验证</string>
+
+    <string name="permlab_useSip">拨打/接听SIP电话</string>
+    <string name="permdesc_useSip">允许该应用拨打和接听SIP电话。</string>
+
+    <string name="permlab_writeCalendar">添加或修改日历活动，并在所有者不知情的情况下向邀请对象发送电子邮件</string>
+    <string name="permdesc_writeCalendar">此应用可在手机上添加、移除或更改日历活动。此应用可能会以日历所有者的身份发送消息，或在不通知所有者的情况下更改活动。</string>
+
+    <string name="permlab_writeCallLog">新建/修改/删除通话记录</string>
+    <string name="permdesc_writeCallLog">允许该应用修改手机的通话记录，包括有关来电和外拨电话的数据。恶意应用可能会借此清除或修改您的通话记录。</string>
+
+    <string name="permlab_writeContacts">修改您的通讯录</string>
+    <string name="permdesc_writeContacts">允许该应用修改您手机上存储的联系人的相关数据，包括您通过打电话、发送电子邮件或以其他方式与特定联系人通信的频率。此权限可让应用删除联系人数据。</string>
+
+    <string name="permlab_writeExternalStorage">修改或删除您的SD卡中的内容</string>
+    <string name="permdesc_writeExternalStorage">允许应用写入SD卡。</string>
+
+
+    <string name="permlab_accessNetworkState">查看网络连接</string>
+    <string name="permdesc_accessNetworkState">允许该应用查看网络连接的相关信息，例如存在和连接的网络。</string>
+
+    <string name="permlab_accessWifiState">查看WLAN连接</string>
+    <string name="permdesc_accessWifiState">允许该应用查看WLAN网络的相关信息，例如是否启用了WLAN以及连接的WLAN设备的名称。</string>
+
+    <string name="permlab_bluetooth">与蓝牙设备配对</string>
+    <string name="permdesc_bluetooth">允许该应用查看手机上的蓝牙配置，以及与配对设备建立连接或接受其连接请求。</string>
+
+    <string name="permlab_bluetoothAdmin">访问蓝牙设置</string>
+    <string name="permdesc_bluetoothAdmin">允许应用配置本地蓝牙手机，并允许其查找远程设备且与之配对。</string>
+
+    <string name="permlab_changeWifiState">连接WLAN网络和断开连接</string>
+    <string name="permdesc_changeWifiState">允许该应用与WLAN接入点建立和断开连接，以及更改WLAN网络的设备配置。</string>
+
+    <string name="permlab_internet">拥有完全的网络访问权限</string>
+    <string name="permdesc_internet">允许该应用创建网络套接字和使用自定义网络协议。浏览器和其他某些应用提供了向互联网发送数据的途径，因此应用无需该权限即可向互联网发送数据。</string>
+
+    <string name="permlab_nfc">控制近距离通信</string>
+    <string name="permdesc_nfc">允许应用与近距离无线通信(NFC)标签、卡和读取器通信。</string>
+
+    <!--other permissions-->
+    <string name="permlab_disableKeyguard">停用屏幕锁定</string>
+    <string name="permdesc_disableKeyguard">允许该应用停用键锁以及任何关联的密码安全措施。例如，让手机在接听来电时停用键锁，在通话结束后重新启用键锁。</string>
+
+    <string name="permlab_expandStatusBar">展开/收拢状态栏</string>
+    <string name="permdesc_expandStatusBar">允许应用展开或收起状态栏。</string>
+
+    <string name="permlab_getTasks">检索正在运行的应用</string>
+    <string name="permdesc_getTasks">允许该应用检索近期运行的和当前正在运行的任务的相关信息。此权限可让该应用了解设备上使用了哪些应用。</string>
+
+    <string name="permlab_installShortcut">安装快捷方式</string>
+    <string name="permdesc_installShortcut">允许应用自行添加主屏幕快捷方式。</string>
+
+    <string name="permlab_killBackgroundProcesses">关闭其他应用</string>
+    <string name="permdesc_killBackgroundProcesses">允许该应用结束其他应用的后台进程。此权限可导致其他应用停止运行。</string>
+
+    <string name="permlab_modifyAudioSettings">更改您的音频设置</string>
+    <string name="permdesc_modifyAudioSettings">允许该应用修改全局音频设置，例如音量和用于输出的扬声器。</string>
+
+    <string name="permlab_readSyncSettings">读取同步设置</string>
+    <string name="permdesc_readSyncSettings">允许该应用读取某个帐号的同步设置。例如，此权限可确定“联系人”应用是否与某个帐号同步。</string>
+
+    <string name="permlab_readSyncStats">读取同步统计信息</string>
+    <string name="permdesc_readSyncStats">允许该应用读取某个帐号的同步统计信息，包括同步活动历史记录和同步数据量。</string>
+
+    <string name="permlab_setAlarm">设置闹钟</string>
+    <string name="permdesc_setAlarm">允许应用在已安装的闹钟应用中设置闹钟。有些闹钟应用可能无法实现此功能。</string>
+
+    <string name="permlab_systemAlertWindow">此应用可显示在其他应用上方</string>
+    <string name="permdesc_systemAlertWindow">此应用可显示在其他应用上方或屏幕的其他部分。这可能会妨碍您正常地使用应用，且其他应用的显示方式可能会受到影响。</string>
+
+    <!--more other permissions-->
+    <string name="permlab_broadcastSticky">发送持久广播</string>
+    <string name="permdesc_broadcastSticky">允许该应用发送持久广播消息，此类消息在广播结束后仍会保留。过度使用可能会导致手机使用过多内存，从而降低其速度或稳定性。</string>
+
+    <string name="permlab_changeNetworkState">更改网络连接性</string>
+    <string name="permdesc_changeNetworkState">允许应用更改网络连接的状态。</string>
+
+    <string name="permlab_changeWifiMulticastState">允许接收WLAN多播</string>
+    <string name="permdesc_changeWifiMulticastState">A允许该应用使用多播地址接收发送到WLAN网络上所有设备（而不仅仅是您的手机）的数据包。该操作的耗电量比非多播模式要大。</string>
+
+    <string name="permlab_getPackageSize">计算应用存储空间</string>
+    <string name="permdesc_getPackageSize">允许应用检索其代码、数据和缓存大小</string>
+
+    <string name="permlab_persistentActivity">让应用始终运行</string>
+    <string name="permdesc_persistentActivity">允许该应用在内存中持续保留其自身的某些组件。这会限制其他应用可用的内存，从而减缓手机运行速度。</string>
+
+    <string name="permlab_receiveBootCompleted">开机启动</string>
+    <string name="permdesc_receiveBootCompleted">允许应用在系统完成引导后立即自动启动。这样可能会延长手机的启动时间，并允许应用始终运行，从而导致手机总体运行速度减慢。</string>
+
+    <string name="permlab_reorderTasks">对正在运行的应用重新排序</string>
+    <string name="permdesc_reorderTasks">允许该应用将任务移动到前台和后台。该应用可能不经您的命令自行执行此操作。</string>
+
+    <string name="permlab_runInBackground">在后台运行</string>
+    <string name="permdesc_runInBackground">此应用可在后台运行，这样可能会加快耗电速度。</string>
+
+    <string name="permlab_useDataInBackground">在后台使用数据</string>
+    <string name="permdesc_useDataInBackground">此应用可在后台使用数据，这样可能会增加流量消耗。</string>
+
+    <string name="permlab_setWallpaper">设置壁纸</string>
+    <string name="permdesc_setWallpaper">允许应用设置系统壁纸。</string>
+
+    <string name="permlab_setWallpaperHints">调整您的壁纸大小</string>
+    <string name="permdesc_setWallpaperHints">允许应用设置有关系统壁纸大小的提示。</string>
+
+    <string name="permlab_uninstallShortcut">卸载快捷方式</string>
+    <string name="permdesc_uninstallShortcut">允许应用自行删除主屏幕快捷方式。</string>
+
+    <string name="permlab_vibrate">控制振动</string>
+    <string name="permdesc_vibrate">允许应用控制振动器。</string>
+
+    <string name="permlab_wakeLock">防止手机休眠</string>
+    <string name="permdesc_wakeLock">允许应用阻止手机进入休眠状态。</string>
+
+    <string name="permlab_writeSettings">修改系统设置</string>
+    <string name="permdesc_writeSettings">允许应用修改系统的设置数据。恶意应用可能会破坏您的系统配置。</string>
+
+    <string name="permlab_writeSyncSettings">启用和停用同步</string>
+    <string name="permdesc_writeSyncSettings">允许该应用修改某个帐号的同步设置。例如，此权限可用于在“联系人”应用与某个帐号之间启用同步。</string>
+
+    <string-array name="funny_quotes">
+        <item>网状花键中</item>
+        <item>召集哥布林中</item>
+        <item>举重中</item>
+        <item>绘制像素点中</item>
+        <item>制定计划中</item>
+        <item>小憩中</item>
+        <item>赶小鸭子中</item>
+        <item>投喂开发者中</item>
+        <item>钓鱼中</item>
+        <item>寻找打手中</item>
+        <item>唤醒地精中</item>
+        <item>打昆特牌中</item>
+        <item>建造冰屋中</item>
+        <item>切换为摄氏度中</item>
+        <item>查询电量中</item>
+        <item>分发礼物中</item>
+        <item>寻找末影龙蛋中</item>
+        <item>发射激光中</item>
+        <item>派对摇摆中</item>
+        <item>前往俱乐部中</item>
+        <item>修正错误中</item>
+        <item>搭乐高积木中</item>
+        <item>征召复仇者中</item>
+        <item>抖腿中</item>
+        <item>飙车中</item>
+        <item>哲学思考中</item>
+        <item>与机器人战斗中</item>
+        <item>开箱子中</item>
+        <item>采蘑菇中</item>
+        <item>制作甜甜圈中</item>
+        <item>进入危险区域中</item>
+        <item>听老妈唠叨中</item>
+        <item>追松鼠中</item>
+        <item>警方突击中</item>
+        <item>制作黑暗料理中</item>
+        <item>擦拭乐器中</item>
+        <item>删除僵尸粉中</item>
+        <item>施法中</item>
+        <item>网络重连中</item>
+        <item>义肢上蜡中</item>
+        <item>入侵艾泽拉斯中</item>
+        <item>打怪升级中</item>
+        <item>地图生成中</item>
+        <item>占领法国中</item>
+        <item>驾驶飞机中</item>
+        <item>摧毁死星中</item>
+        <item>编写代码中</item>
+        <item>正在跑马拉松</item>
+        <item>打冰球中</item>
+        <item>欣赏球赛中</item>
+        <item>与反派决斗中</item>
+        <item>驾驶蝙蝠车中</item>
+        <item>打造钢铁侠中</item>
+        <item>爆爆米花中</item>
+        <item>哈希值生成中</item>
+        <item>Boss复活中</item>
+        <item>氪金抽卡中</item>
+        <item>人生规划中</item>
+        <item>正在吃拉面</item>
+        <item>加热剩饭中</item>
+        <item>铲屎中</item>
+        <item>遛狗中</item>
+        <item>ZzZzZz</item>
+        <item>跳绳中</item>
+        <item>声明变量中</item>
+        <item>Doge生成中</item>
+        <item>内存回收中</item>
+        <item>擦拭眼镜中</item>
+        <item>T台走秀中</item>
+        <item>数到10</item>
+        <item>启动本地客户端中</item>
+        <item>应用启动中</item>
+        <item>绘制图表中</item>
+        <item>阅读指南中</item>
+        <item>寻找锤子中</item>
+        <item>解字谜中</item>
+        <item>生成音量调节器中</item>
+        <item>调节饱和度中</item>
+        <item>正在点外卖</item>
+        <item>你今天运气不错</item>
+        <item>清理屏幕中</item>
+        <item>搅拌中</item>
+        <item>切土豆中</item>
+        <item>拯救世界中</item>
+        <item>自拍中</item>
+        <item>加速磁盘运行中</item>
+        <item>寻找路由中</item>
+        <item>摇滚中</item>
+        <item>研磨颜料中</item>
+        <item>学习微积分中</item>
+        <item>玩NS中</item>
+        <item>玩马里奥赛车中</item>
+        <item>与苦力怕战斗中</item>
+        <item>换弹夹中</item>
+        <item>选择皮卡丘中</item>
+        <item>半条命3延期中</item>
+        <item>Rush B中</item>
+        <item>营救人质中</item>
+        <item>输入作弊码中</item>
+        <item>堆雪人中</item>
+        <item>祈雨中</item>
+        <item>反转USB接口中</item>
+        <item>应用滤镜中</item>
+        <item>截屏中</item>
+        <item>刮胡子中</item>
+        <item>种面包中</item>
+        <item>烤点心中</item>
+        <item>Javascript遍历中</item>
+        <item>寻找风投中</item>
+        <item>瓦解射线发射</item>
+        <item>发盆友圈中</item>
+        <item>加密信息中</item>
+        <item>混淆C代码中</item>
+        <item>修改Licenses中</item>
+        <item>诊断设备中</item>
+        <item>曲率引擎预热中</item>
+        <item>校准位置中</item>
+        <item>校准百分比中</item>
+        <item>代码开源中</item>
+        <item>关闭重力中</item>
+        <item>增加推力中</item>
+        <item>检查传感器中</item>
+        <item>寻找RSS索引中</item>
+        <item>唤醒屏幕中</item>
+        <item>连接总线中</item>
+        <item>内存取址中</item>
+        <item>绕过电容器中</item>
+        <item>擦拭屏幕中</item>
+        <item>图灵测试中</item>
+        <item>模拟PS4中</item>
+        <item>安装驱动中</item>
+        <item>生成叶绿素中</item>
+        <item>浇花中</item>
+        <item>使用咖啡因中</item>
+        <item>痛饮红牛中</item>
+        <item>系统分析中</item>
+        <item>遍历数组中</item>
+        <item>谷歌搜索中</item>
+        <item>堆栈溢出中</item>
+        <item>编译代码中</item>
+        <item>回复邮件中</item>
+        <item>移植代码中</item>
+        <item>备份文件中</item>
+        <item>对话框渲染中</item>
+        <item>阅读RSS订阅中</item>
+        <item>压缩数据中</item>
+        <item>云拒绝中</item>
+        <item>计算分数中</item>
+        <item>清理本地缓存中</item>
+        <item>内存泄漏中</item>
+        <item>学习Python中</item>
+        <item>研究Ruby中</item>
+        <item>放弃C++中</item>
+        <item>接受Kotlin中</item>
+        <item>DDOS中</item>
+        <item>弹出软盘中</item>
+        <item>NullPointerException</item>
+        <item>组团拉人中</item>
+        <item>学习打Call中</item>
+        <item>测试处理器中</item>
+        <item>调试命令中</item>
+        <item>计算浮点数中</item>
+        <item>四舍五入小数中</item>
+        <item>学习达拉崩吧中</item>
+        <item>毁灭世界中</item>
+        <item>取代硅谷中</item>
+        <item>众筹中</item>
+        <item>缓存日志中</item>
+        <item>传火中</item>
+        <item>点燃篝火中</item>
+        <item>前往秋名山中</item>
+        <item>滚铁圈中</item>
+        <item>祈祷胜利中</item>
+        <item>等车中</item>
+        <item>加93号汽油中</item>
+        <item>清理管道中</item>
+        <item>捏泡泡中</item>
+        <item>寻找自由中</item>
+        <item>人物捏脸中</item>
+        <item>计算汇率中</item>
+        <item>制造线粒体中</item>
+        <item>充电中</item>
+        <item>探索地图中</item>
+        <item>合并同类项中</item>
+        <item>解方程中</item>
+        <item>改良蒸汽机中</item>
+        <item>死亡重生中</item>
+        <item>序列化JSON中</item>
+        <item>研究垃圾代码中</item>
+        <item>删评论中</item>
+        <item>切换到Django中</item>
+        <item>学习编程中</item>
+        <item>躲避闪电苦力怕中</item>
+        <item>Flappy Bird撞墙中</item>
+        <item>庆祝中</item>
+        <item>削铅笔中</item>
+        <item>自动化操作中</item>
+        <item>袭击哥斯拉中</item>
+        <item>摸鱼中</item>
+        <item>思考有趣的语句中</item>
+    </string-array>
+
+    <!--new permission-->
+
+    <string name="permlab_statusBar">停用或修改状态栏</string>
+    <string name="permdesc_statusBar">允许应用停用状态栏或者增删系统图标。</string>
+
+    <string name="permlab_statusBarService">用作状态栏</string>
+    <string name="permdesc_statusBarService">允许以状态栏形式显示应用。</string>
+
+    <string name="permlab_readCellBroadcasts">读取小区广播消息</string>
+    <string name="permdesc_readCellBroadcasts">允许应用读取您的设备收到的小区广播消息。小区广播消息是在某些地区发送的、用于发布紧急情况警告的提醒信息。恶意应用可能会在您收到小区紧急广播时干扰您设备的性能或操作。</string>
+
+    <string name="permlab_subscribedFeedsRead">读取订阅的供稿</string>
+    <string name="permdesc_subscribedFeedsRead">允许应用获取有关当前同步的 Feed 的详情。</string>
+
+    <string name="permlab_manageProfileAndDeviceOwners">管理个人资料和设备所有者</string>
+    <string name="permdesc_manageProfileAndDeviceOwners">允许应用设置个人资料所有者和设备所有者。</string>
+
+    <string name="permlab_enableCarMode">启用车载模式</string>
+    <string name="permdesc_enableCarMode">允许应用启用车载模式。</string>
+
+    <string name="permlab_sim_communication">向 SIM 卡发送命令</string>
+    <string name="permdesc_sim_communication">允许应用向SIM卡发送命令（此权限具有很高的危险性）。</string>
+
+    <string name="permlab_accessImsCallService">使用即时通讯通话服务</string>
+    <string name="permdesc_accessImsCallService">允许应用自行使用即时通讯服务拨打电话。</string>
+
+    <string name="permlab_transmitIr">发射红外线</string>
+    <string name="permdesc_transmitIr">允许应用使用手机的红外线发射器。</string>
+
+    <string name="permlab_setTimeZone">设置时区</string>
+    <string name="permdesc_setTimeZone">允许应用更改手机的时区。</string>
+
+    <string name="permlab_changeTetherState">更改网络共享连接</string>
+    <string name="permdesc_changeTetherState">允许应用更改绑定网络连接的状态。</string>
+
+    <string name="permlab_accessWimaxState">建立或中断 WiMAX 网络连接</string>
+    <string name="permdesc_accessWimaxState">允许该应用确定是否启用了 WiMAX 以及连接的任何 WiMAX 网络的相关信息。</string>
+
+    <string name="permlab_changeWimaxState">更改 WiMAX 状态</string>
+    <string name="permdesc_changeWimaxState">允许该应用建立和断开手机与 WiMAX 网络之间的连接。</string>
+
+    <string name="permlab_manageFingerprint">管理指纹硬件</string>
+    <string name="permdesc_manageFingerprint">允许该应用调用方法来添加和删除可用的指纹模板。</string>
+
+    <string name="permlab_registerSimSubscription">注册新的电信 SIM 卡连接</string>
+    <string name="permdesc_registerSimSubscription">允许该应用注册新的电信 SIM 卡连接。</string>
+
+    <string name="permlab_registerCallProvider">注册新的电信网络连接</string>
+    <string name="permdesc_registerCallProvider">允许该应用注册新的电信网络连接。</string>
+
+    <string name="permlab_connectionManager">管理电信网络连接</string>
+    <string name="permdesc_connectionManager">允许该应用管理电信网络连接。</string>
+
+    <string name="permlab_bindIncallService">与通话屏幕互动</string>
+    <string name="permdesc_bindIncallService">允许应用控制用户看到通话屏幕的时机和方式。</string>
+
+    <string name="permlab_bindConnectionService">与电话服务交互</string>
+    <string name="permdesc_bindConnectionService">允许该应用与电话服务交互以便接打电话。</string>
+
+    <string name="permlab_controlIncallExperience">向用户提供通话体验</string>
+    <string name="permdesc_controlIncallExperience">允许应用向用户提供通话体验。</string>
+
+    <string name="permlab_readNetworkUsageHistory">读取网络使用情况历史记录</string>
+    <string name="permdesc_readNetworkUsageHistory">允许应用读取特定网络和应用的网络使用情况历史记录。</string>
+
+    <string name="permlab_manageNetworkPolicy">管理网络政策</string>
+    <string name="permdesc_manageNetworkPolicy">允许应用管理网络规范和定义专门针对应用的规则。</string>
+
+    <string name="permlab_modifyNetworkAccounting">修改网络使用情况记录方式</string>
+    <string name="permdesc_modifyNetworkAccounting">允许该应用修改对于各应用的网络使用情况的统计方式。普通应用不应使用此权限。</string>
+
+    <string name="permlab_accessNotifications">访问通知</string>
+    <string name="permdesc_accessNotifications">允许该应用检索、检查并清除通知，包括其他应用发布的通知。</string>
+
+    <string name="permlab_bindNotificationListenerService">绑定到通知侦听器服务</string>
+    <string name="permdesc_bindNotificationListenerService">允许应用绑定到通知侦听器服务的顶级接口（普通应用绝不需要此权限）。</string>
+
+    <string name="permlab_bindConditionProviderService">绑定到条件提供程序服务</string>
+    <string name="permdesc_bindConditionProviderService">允许应用绑定到条件提供程序服务的顶级接口。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_bindDreamService">绑定到互动屏保服务</string>
+    <string name="permdesc_bindDreamService">允许应用绑定到互动屏保服务的顶级接口。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_invokeCarrierSetup">调用运营商提供的配置应用</string>
+    <string name="permdesc_invokeCarrierSetup">允许应用调用运营商提供的配置应用。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_accessNetworkConditions">监听网络状况的观测信息</string>
+    <string name="permdesc_accessNetworkConditions">允许应用监听网络状况的观测信息。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_setInputCalibration">更改输入设备校准设置</string>
+    <string name="permdesc_setInputCalibration">允许应用修改触摸屏的校准参数。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_accessDrmCertificates">访问DRM证书</string>
+    <string name="permdesc_accessDrmCertificates">允许应用配置和使用DRM证书。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_handoverStatus">接收 Android Beam 的传输状态</string>
+    <string name="permdesc_handoverStatus">允许此应用接收Android Beam当前传输内容的相关信息</string>
+
+    <string name="permlab_removeDrmCertificates">移除DRM证书</string>
+    <string name="permdesc_removeDrmCertificates">允许应用移除DRM证书。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_bindCarrierMessagingService">绑定到运营商消息传递服务</string>
+    <string name="permdesc_bindCarrierMessagingService">允许应用绑定到运营商消息传递服务的顶级接口。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_bindCarrierServices">绑定到运营商服务</string>
+    <string name="permdesc_bindCarrierServices">允许应用绑定到运营商服务。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_accessNotificationPolicy">“勿扰”模式使用权限</string>
+    <string name="permdesc_accessNotificationPolicy">允许此应用读取和写入“勿扰”模式配置。</string>
+
+    <string name="permlab_readHistoryBookmarks">读取您的网络书签和历史记录</string>
+    <string name="permdesc_readHistoryBookmarks">允许该应用读取浏览器访问过的所有网址记录以及浏览器的所有书签。请注意：此权限可能不适用于第三方浏览器或具备网页浏览功能的其他应用。</string>
+
+    <string name="permlab_writeHistoryBookmarks">写入网络书签和历史记录</string>
+    <string name="permdesc_writeHistoryBookmarks">允许该应用修改您手机上存储的浏览器历史记录或浏览器书签。此权限可让该应用清除或修改浏览器数据。请注意：此权限可能不适用于第三方浏览器或具备网页浏览功能的其他应用。</string>
+
+    <string name="permlab_writeGeolocationPermissions">修改“浏览器”地理位置的权限</string>
+    <string name="permdesc_writeGeolocationPermissions">允许应用修改“浏览器”的地理位置权限。恶意应用可能借此向任意网站发送位置信息。</string>
+
+    <string name="permlab_routeMediaOutput">更改媒体输出线路</string>
+    <string name="permdesc_routeMediaOutput">允许该应用将媒体输出线路更改到其他外部设备。</string>
+
+    <string name="permlab_readInstallSessions">读取安装会话</string>
+    <string name="permdesc_readInstallSessions">允许应用读取安装会话。这样，应用将可以查看有关当前软件包安装的详情。</string>
+
+    <string name="permlab_requestInstallPackages">请求安装文件包</string>
+    <string name="permdesc_requestInstallPackages">允许应用请求安装文件包。</string>
+
+    <string name="permlab_requestDeletePackages">请求删除文件包</string>
+    <string name="permdesc_requestDeletePackages">允许应用请求删除文件包。</string>
+
+    <string name="permlab_requestIgnoreBatteryOptimizations">请求忽略电池优化</string>
+    <string name="permdesc_requestIgnoreBatteryOptimizations">允许应用请求相应的权限，以便忽略针对该应用的电池优化。</string>
+
+    <!--WTF permissions-->
+    <string name="permlab_batteryStats">读取电池信息</string>
+    <string name="permdesc_batteryStats">允许应用读取当前底层电池使用数据。可能会让应用检测到正在使用的应用。</string>
+
+    <string name="permlab_bluetoothPrivileged">允许应用配对蓝牙</string>
+    <string name="permdesc_bluetoothPrivileged">允许应用在用户不知情的情况下配对蓝牙设备、允许或禁止访问通讯录或消息。不适用于第三方应用。</string>
+
+    <string name="permlab_changeConfiguration">修改系统显示设置</string>
+    <string name="permdesc_changeConfiguration">允许应用修改当前设置，例如本地区域设置。</string>
+
+    <string name="permlab_manageDocuments">管理文档储存</string>
+    <string name="permdesc_manageDocuments">允许应用管理文件，通常作为文件选择器。此权限应给予平台文件管理应用。不应给予第三方应用。</string>
+
+    <string name="permlab_readLogs">读取日志数据</string>
+    <string name="permdesc_readLogs">（系统权限）允许应用读取系统底层日志文件。不适用于第三方应用，因为这些文件包含用户隐私信息。</string>
+
+    <string name="permlab_localMacAddress">获取MAC地址</string>
+    <string name="permdesc_localMacAddress">（系统权限）允许应用读取WiFi和蓝牙的MAC地址</string>
+
+    <string name="permlab_mountUnmountFilesystems">管理SD卡文件系统</string>
+    <string name="permdesc_mountUnmountFilesystems">（系统权限）允许挂载或卸除可移动储存介质的文件系统。不适用于第三方应用。</string>
+
+    <!--more permissions-->
+    <string name="permlab_downloadWithoutNotification">下载文件并不显示通知</string>
+    <string name="permdesc_downloadWithoutNotification">允许应用通过下载管理器下载文件并不向用户显示通知。</string>
+
+    <string name="permlab_writeSecureSettings">修改系统安全设置</string>
+    <string name="permdesc_writeSecureSettings">允许应用修改系统安全设置。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_setPreferredApplications">设置默认应用</string>
+    <string name="permdesc_setPreferredApplications">允许应用修改默认应用。恶意应用可能改变正在运行的应用，顶替当前应用，搜集隐私信息。</string>
+
+    <string name="permlab_clearAppCache">删除应用所有缓存数据</string>
+    <string name="permdesc_clearAppCache">允许应用通过删除应用缓存文件以释放手机储存空间。这可能造成其他应用由于重新获取数据，从而启动变慢。</string>
+
+    <string name="permlab_dump">获取系统内核状态</string>
+    <string name="permdesc_dump">允许应用获取系统内核信息。恶意应用可能获取各种其本不需要的隐私和安全信息。</string>
+
+    <string name="permlab_forceStopPackages">强制关闭其他应用</string>
+    <string name="permdesc_forceStopPackages">允许应用强制关闭其他应用</string>
+
+    <string name="permlab_getAppOpsStats">获取应用操作数据</string>
+    <string name="permdesc_getAppOpsStats">允许应用获取搜集的应用操作数据。普通应用绝不需要此权限。</string>
+
+    <string name="permlab_interactAcrossUsers">不同用户间运行</string>
+    <string name="permdesc_interactAcrossUsers">允许应用在本设备不同用户间运行。恶意应用可能使用此权限打破不同用户间的保护。</string>
+
+    <string name="permlab_manageUsers">管理用户</string>
+    <string name="permdesc_manageUsers">允许应用管理本设备用户，包括查询、新建、删除等操作。</string>
+
+    <string name="permlab_com.google.android.c2dm.permission.RECEIVE">从互联网接收数据</string>
+    <string name="permdesc_com.google.android.c2dm.permission.RECEIVE">允许应用接受由应用的服务发送的云端到设备消息。使用此服务会产生数据使用量。恶意应用可能会导致数据使用量过多。</string>
+
+    <string name="permlab_com.android.vending.BILLING">Google Play结算服务</string>
+    <string name="permdesc_com.android.vending.BILLING">从Google Play购买服务请求并回复消息。</string>
+
+    <!--launcher permissions-->
+    <string name="permlab_com.android.launcher.permission.INSTALL_SHORTCUT">添加快捷方式</string>
+    <string name="permdesc_com.android.launcher.permission.INSTALL_SHORTCUT">允许应用自动向桌面添加快捷方式。</string>
+
+    <string name="permlab_com.android.launcher.permission.UNINSTALL_SHORTCUT">删除快捷方式</string>
+    <string name="permdesc_com.android.launcher.permission.UNINSTALL_SHORTCUT">允许应用自动从桌面删除快捷方式。</string>
+
+    <string name="permlab_com.android.launcher.permission.READ_SETTINGS">读取桌面设置和快捷方式</string>
+    <string name="permdesc_com.android.launcher.permission.READ_SETTINGS">允许应用读取桌面设置和快捷方式。</string>
+
+    <string name="permlab_com.android.launcher.permission.WRITE_SETTINGS">修改桌面设置和快捷方式</string>
+    <string name="permdesc_com.android.launcher.permission.WRITE_SETTINGS">允许应用修改桌面设置和快捷方式。</string>
+
+</resources>

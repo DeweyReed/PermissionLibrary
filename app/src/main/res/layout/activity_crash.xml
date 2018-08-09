@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.about.CrashActivity">
+
+    <ImageView
+        android:id="@+id/imageCrash"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:contentDescription="@null"
+        android:src="@drawable/crash" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/crash_content"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDetail"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@android:string/ok"
+        android:textColor="@color/alert_red"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/crash_restart"
+        android:textColor="@color/alert_red"
+        android:textSize="18sp" />
+
+</LinearLayout>

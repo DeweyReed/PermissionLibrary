@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundTextView">
+        <attr name="bgColor" format="color" />
+        <attr name="topLeftCorner" format="dimension" />
+        <attr name="topRightCorner" format="dimension" />
+        <attr name="bottomRightCorner" format="dimension" />
+        <attr name="bottomLeftCorner" format="dimension" />
+        <attr name="allCorner" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FunnyLoader">
+        <attr name="funny_prefix" format="string|reference" />
+        <attr name="funny_postfix" format="string|reference" />
+        <attr name="funny_animation_duration" format="integer|reference" />
+    </declare-styleable>
+
+</resources>

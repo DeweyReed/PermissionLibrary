@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_show_config"
+        android:icon="@drawable/action_filter"
+        android:orderInCategory="50"
+        android:title="@string/action_filter"
+        app:showAsAction="ifRoom" />
+
+    <!--<item-->
+    <!--android:id="@+id/action_set_notification"-->
+    <!--android:checkable="true"-->
+    <!--android:orderInCategory="60"-->
+    <!--android:title="@string/notify_setting_title"-->
+    <!--app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="70"
+        android:title="@string/help_title"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="80"
+        android:title="@string/about_title"
+        app:showAsAction="never" />
+</menu>

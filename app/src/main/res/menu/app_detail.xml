@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_app_setting"
+        android:icon="@drawable/action_edit_setting"
+        android:orderInCategory="50"
+        android:title="@string/action_title_app_setting"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_delete_apk"
+        android:icon="@drawable/action_delete"
+        android:orderInCategory="53"
+        android:title="@string/action_title_delete_apk"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_install_app"
+        android:orderInCategory="55"
+        android:title="@string/action_title_install_app"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_show_desp"
+        android:checkable="true"
+        android:orderInCategory="60"
+        android:title="@string/action_title_show_perm_detail"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.finalweek10.permission">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="com.finalweek10.permission">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+                <data
+                    android:host="deweyreed.github.io"
+                    android:pathPrefix="/Permission-Library"
+                    android:scheme="https" />
+                <data
+                    android:host="deweyreed.github.io"
+                    android:pathPrefix="/Permission-Library"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.groupsapp.GroupsAppActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.detail.AppDetailActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:theme="@style/AppTheme.AppDetail">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.about.AboutActivity"
+            android:launchMode="singleTop"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:theme="@style/AppTheme.About">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity" />
+        </activity>
+
+        <!--This receiver notifies user a newly installed app's permission.
+            However, it won't work on newer systems
+            but I comment all codes instead of deleting them.-->
+        <!--<receiver-->
+        <!--android:name=".receiver.AppReceiver"-->
+        <!--android:enabled="true"-->
+        <!--android:exported="false">-->
+        <!--<intent-filter>-->
+        <!--<data android:scheme="package" />-->
+
+        <!--<action android:name="android.intent.action.PACKAGE_ADDED" />-->
+        <!--<action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />-->
+        <!--</intent-filter>-->
+        <!--</receiver>-->
+        <activity
+            android:name=".ui.about.CrashActivity"
+            android:process=":error_activity">
+            <intent-filter>
+                <action android:name="cat.ereza.customactivityoncrash.ERROR" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

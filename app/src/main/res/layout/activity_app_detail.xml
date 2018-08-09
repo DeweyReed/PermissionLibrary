@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.finalweek10.permission.ui.detail.AppDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="top"
+            app:expandedTitleMargin="0dp"
+            app:expandedTitleMarginEnd="16dp"
+            app:expandedTitleMarginStart="108dp"
+            app:expandedTitleMarginTop="56dp"
+            app:expandedTitleTextAppearance="@style/TextAppearance_AppDetail"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:scrimAnimationDuration="200"
+            app:title="Application Name"
+            app:titleEnabled="@bool/detail_collapsed_title_enable"
+            app:toolbarId="@+id/toolbar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                app:layout_collapseMode="parallax">
+
+                <View
+                    android:id="@+id/alignLine"
+                    style="@style/MatchParentOr540"
+                    android:layout_height="match_parent"
+                    tools:layout_width="match_parent" />
+
+                <ImageView
+                    android:id="@+id/appIcon"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignLeft="@id/alignLine"
+                    android:layout_alignStart="@id/alignLine"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="56dp"
+                    android:contentDescription="@string/a11y_icon"
+                    android:transitionName="transition_icon"
+                    app:srcCompat="@mipmap/ic_launcher"
+                    tools:ignore="UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/appPackageName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="108dp"
+                    android:layout_marginStart="108dp"
+                    android:paddingTop="88dp"
+                    tools:text="com.finalweek10.permission" />
+
+                <TextView
+                    android:id="@+id/appVersionInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/appPackageName"
+                    android:layout_alignStart="@id/appPackageName"
+                    android:layout_below="@id/appPackageName"
+                    android:layout_marginTop="8dp"
+                    tools:text="versionCode: 434\nversionName: Permission" />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:id="@+id/labelLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/appPackageName"
+                    android:layout_alignStart="@id/appPackageName"
+                    android:layout_below="@id/appVersionInfo"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    app:alignContent="flex_start"
+                    app:alignItems="flex_start"
+                    app:flexWrap="wrap" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_app_detail" />
+
+</android.support.design.widget.CoordinatorLayout>

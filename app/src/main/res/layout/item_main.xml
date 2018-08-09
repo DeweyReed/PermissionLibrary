@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    tools:ignore="Overdraw">
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/a11y_icon"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/appIcon"
+        android:layout_toLeftOf="@id/itemGoToDetail"
+        android:layout_toRightOf="@id/appIcon"
+        android:layout_toStartOf="@id/itemGoToDetail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textSize="18sp"
+        tools:text="CycleTimer" />
+
+    <TextView
+        android:id="@+id/itemDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/itemName"
+        android:layout_alignStart="@id/itemName"
+        android:layout_below="@id/itemName"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        tools:layout_editor_absoluteX="163dp"
+        tools:text="5 permissions" />
+
+    <ImageButton
+        android:id="@+id/itemGoToDetail"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:contentDescription="@string/a11y_go_to_detail"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_arrow_right" />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="invisible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.finalweek10.permission.ui.detail.AppDetailActivity"
+    tools:ignore="MergeRootFrame"
+    tools:showIn="@layout/activity_app_detail"
+    tools:visibility="visible">
+
+    <include
+        layout="@layout/layout_loading"
+        android:visibility="visible" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listAppPermissions"
+        style="@style/MatchParentOr540"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+        tools:layout_width="match_parent"
+        tools:listitem="@layout/item_app_perm"
+        tools:visibility="visible" />
+
+</FrameLayout>

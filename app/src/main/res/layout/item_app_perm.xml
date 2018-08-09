@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutItemAppPerm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="4dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="4dp"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/itemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/itemState"
+        android:layout_toStartOf="@id/itemState"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        tools:text="short short string" />
+
+    <TextView
+        android:id="@+id/itemState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp"
+        tools:text="@string/permission_state_on" />
+
+    <TextView
+        android:id="@+id/itemSimpleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemLabel"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="12sp"
+        tools:text="ACCESS_INTERNET_STATE" />
+
+    <TextView
+        android:id="@+id/itemDesp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/itemSimpleName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="12sp"
+        tools:text="long long string" />
+
+</RelativeLayout>

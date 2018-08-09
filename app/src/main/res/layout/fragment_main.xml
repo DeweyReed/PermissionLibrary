@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_loading" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        style="@style/MatchParentOr540"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+            android:id="@+id/appsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:fastScrollAutoHide="true"
+            app:fastScrollPopupBgColor="@color/colorAccent"
+            app:fastScrollThumbColor="@color/colorAccent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            tools:layout_width="match_parent"
+            tools:listitem="@layout/item_main"
+            tools:visibility="visible" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>
+
