@@ -147,7 +147,9 @@
         <item>Copy short description</item>
         <item>Copy long description</item>
         <item>Copy all</item>
+        <item>Check this permission in the official doc</item>
     </string-array>
+    <string name="toast_check_in_doc">Permission copied. Please search the permission in the opened page.</string>
 
     <!--permission description-->
     <string name="permlab_accessCoarseLocation">Access approximate location(network-based)</string>

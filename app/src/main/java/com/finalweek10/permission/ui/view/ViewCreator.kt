@@ -5,7 +5,9 @@ import android.app.Activity
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
+import android.net.Uri
 import android.view.View
 import android.view.ViewGroup
 import com.afollestad.materialdialogs.MaterialDialog
@@ -17,6 +19,7 @@ import com.github.javiersantos.materialstyleddialogs.MaterialStyledDialog
 import com.github.javiersantos.materialstyleddialogs.enums.Style
 import com.google.android.flexbox.FlexboxLayout
 import org.jetbrains.anko.dip
+import org.jetbrains.anko.longToast
 import org.jetbrains.anko.toast
 
 /**
@@ -69,8 +72,14 @@ fun Activity.createPermissionItemItemActionDialog(data: VisiblePerm) {
                     0 -> data.permLabel
                     1 -> data.simpleName
                     2 -> data.permDescription
-                    else -> arrayOf(data.permLabel, data.simpleName, data.permDescription)
+                    3 -> arrayOf(data.permLabel, data.simpleName, data.permDescription)
                             .joinToString(separator = "\n")
+                    else -> {
+                        copyToClipboard(data.simpleName)
+                        longToast(R.string.toast_check_in_doc)
+                        startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/res/AndroidManifest.xml")))
+                        return@itemsCallback
+                    }
                 }
                 copyToClipboard(content)
                 toast(content)
