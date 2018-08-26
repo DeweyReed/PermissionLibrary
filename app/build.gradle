@@ -9,11 +9,11 @@ def commitCount =
         65536
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId "com.finalweek10.permission"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode commitCount
         versionName "1.3.8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

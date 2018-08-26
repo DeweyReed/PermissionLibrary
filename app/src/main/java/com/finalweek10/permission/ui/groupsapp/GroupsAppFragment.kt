@@ -69,7 +69,7 @@ class GroupsAppFragment @Inject constructor() : DaggerFragment(),
                 context?.run {
                     val v = viewClicked.findViewById<View>(R.id.appIcon)
                     val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                            activity as Activity, v, ViewCompat.getTransitionName(v))
+                            activity as Activity, v, ViewCompat.getTransitionName(v) ?: "")
                     val intent = Intent(context, AppDetailActivity::class.java)
                     intent.putExtra(AppDetailActivity.EXTRA_APP, adapter.getItem(position) as VisibleApp)
                     ActivityCompat.startActivity(this, intent, options.toBundle())

@@ -67,7 +67,7 @@ class AppsFragment @Inject constructor() : DaggerFragment(),
                     val activity = activity ?: return@run
                     val v = viewClicked.findViewById<View>(R.id.appIcon)
                     val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                            activity, v, ViewCompat.getTransitionName(v))
+                            activity, v, ViewCompat.getTransitionName(v) ?: "")
                     val intent = Intent(context, AppDetailActivity::class.java)
                     intent.putExtra(AppDetailActivity.EXTRA_APP,
                             adapter.getItem(position) as VisibleApp)
