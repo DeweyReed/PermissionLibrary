@@ -37,6 +37,20 @@ MVP + Room + Dagger2 + RxJava2
 
 `other`增加了根据中文拼音排序应用的功能。
 
+## Resources
+
+[官方文档](https://developer.android.com/guide/topics/permissions/index.html)
+
+[与权限相关的Material Deisgn](https://material.io/guidelines/patterns/permissions.html)
+
+[官方的权限列表](https://developer.android.com/reference/android/Manifest.permission.html)
+
+[一个开源应用](https://code.google.com/archive/p/android-permission-explorer/)
+
+[所有权限及其内容](https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/res/AndroidManifest.xml)
+
+[一些权限的描述](http://androidpermissions.com/)
+
 ## License
 
 [MIT License](https://github.com/DeweyReed/PermissionLibrary/blob/master/LICENSE)

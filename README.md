@@ -40,6 +40,20 @@ There're two flavors: `google` and `other`.
 
 `other` flavor supports sorting apps with Chinese Pinyin.
 
+## Resources
+
+[Official Docs](https://developer.android.com/guide/topics/permissions/index.html)
+
+[Material Design Related to Permissions](https://material.io/guidelines/patterns/permissions.html)
+
+[Official Permission List](https://developer.android.com/reference/android/Manifest.permission.html)
+
+[An Open Sourced App](https://code.google.com/archive/p/android-permission-explorer/)
+
+[All Permissions and Their Details](https://github.com/aosp-mirror/platform_frameworks_base/blob/master/core/res/AndroidManifest.xml)
+
+[Some Permissions' Details](http://androidpermissions.com/)
+
 ## License
 
 [MIT License](https://github.com/DeweyReed/PermissionLibrary/blob/master/LICENSE)
