@@ -1198,4 +1198,14 @@
     <string name="permlab_com.android.launcher.permission.WRITE_SETTINGS">Write Home settings and shortcuts</string>
     <string name="permdesc_com.android.launcher.permission.WRITE_SETTINGS">Allows the app to change the settings and shortcuts in Home.</string>
 
+    <!--New permissions from Android P-->
+    <string name="permlab_acceptHandover">Continue a call from another app</string>
+    <string name="permdesc_acceptHandover">Allows the app to continue a call which was started in another app.</string>
+
+    <string name="permlab_useBiometric">Use biometric hardware</string>
+    <string name="permdesc_useBiometric">Allows the app to use biometric hardware for authentication</string>
+
+    <string name="permlab_foregroundService">Run foreground service</string>
+    <string name="permdesc_foregroundService">Allows the app to make use of foreground services.</string>
+
 </resources>

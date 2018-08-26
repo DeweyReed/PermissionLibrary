@@ -263,7 +263,9 @@ object DatabaseUtil {
                 "RECEIVE_BOOT_COMPLETED",
                 "SYSTEM_ALERT_WINDOW",
                 "VIBRATE",
-                "WAKE_LOCK")
+                "WAKE_LOCK",
+                "FOREGROUND_SERVICE",
+                "USE_BIOMETRIC")
     }
 
     val removedPermissionList by lazy {

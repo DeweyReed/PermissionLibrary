@@ -708,4 +708,13 @@
     <string name="permlab_com.android.launcher.permission.WRITE_SETTINGS">修改桌面设置和快捷方式</string>
     <string name="permdesc_com.android.launcher.permission.WRITE_SETTINGS">允许应用修改桌面设置和快捷方式。</string>
 
+    <string name="permlab_acceptHandover">继续进行来自其他应用的通话</string>
+    <string name="permdesc_acceptHandover">允许该应用继续进行在其他应用中发起的通话。</string>
+
+    <string name="permlab_useBiometric">使用生物特征硬件</string>
+    <string name="permdesc_useBiometric">允许该应用使用生物特征硬件进行身份验证。</string>
+
+    <string name="permlab_foregroundService">运行前台服务</string>
+    <string name="permdesc_foregroundService">允许该应用使用前台服务。</string>
+
 </resources>
