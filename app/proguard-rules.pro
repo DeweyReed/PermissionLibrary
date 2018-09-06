@@ -31,3 +31,6 @@
 -keepclassmembers  class **$** extends com.chad.library.adapter.base.BaseViewHolder {
      <init>(...);
 }
+
+# https://github.com/timusus/RecyclerView-FastScroll/issues/88
+-dontwarn com.simplecityapps.recyclerview_fastscroll.views.FastScrollPopup
