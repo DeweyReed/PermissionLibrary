@@ -9,8 +9,8 @@
 </div>
 </br>
 <div align="center">
-    <a href="https://play.google.com/store/apps/details?id=com.finalweek10.permission.google">
-        <img src="https://img.shields.io/badge/Download-PlayStore-green.svg"/>
+    <a href="https://github.com/DeweyReed/PermissionLibrary/releases">
+        <img src="https://img.shields.io/badge/Download-Github-green.svg"/>
     </a>
     <a href="https://www.coolapk.com/apk/162565">
         <img src="https://img.shields.io/badge/Download-CoolApk-green.svg"/>
@@ -36,6 +36,12 @@ MVP + Room + Dagger2 + RxJava2
 有两个Flavor: `google`和`other`
 
 `other`增加了根据中文拼音排序应用的功能。
+
+## 发布流程
+
+1. App: 注释DEBUG代码
+1. build.gradle: 注释development assistant依赖
+1. 修改version code
 
 ## Resources
 

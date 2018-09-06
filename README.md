@@ -9,8 +9,8 @@
 </div>
 </br>
 <div align="center">
-    <a href="https://play.google.com/store/apps/details?id=com.finalweek10.permission.google">
-        <img src="https://img.shields.io/badge/Download-PlayStore-green.svg"/>
+    <a href="https://github.com/DeweyReed/PermissionLibrary/releases">
+        <img src="https://img.shields.io/badge/Download-Github-green.svg"/>
     </a>
     <a href="https://www.coolapk.com/apk/162565">
         <img src="https://img.shields.io/badge/Download-CoolApk-green.svg"/>
@@ -39,6 +39,12 @@ However, since I wrote this app for practicing, the implementation and codes in 
 There're two flavors: `google` and `other`.
 
 `other` flavor supports sorting apps with Chinese Pinyin.
+
+## Release Procedure
+
+1. App: comment DEBUG block
+1. build.gradle: disable development assistant dependencies
+1. Change version code
 
 ## Resources
 
