@@ -4,18 +4,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
-def commitCount =
-//        Integer.parseInt('git rev-list --all --count'.execute([], project.rootDir).text.trim())
-        65536
-
 android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.finalweek10.permission"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode commitCount
-        versionName "1.3.8"
+        versionCode 300
+        versionName "1.4.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary true
 
@@ -81,8 +77,8 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:$daggerVersion"
     kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
     // rxjava + rxandroid
-    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
-    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.1'
     // butter knife
     implementation 'com.jakewharton:butterknife:8.8.1'
     kapt 'com.jakewharton:butterknife-compiler:8.8.1'

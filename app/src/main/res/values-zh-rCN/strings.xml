@@ -31,6 +31,7 @@
     <string name="label_dangerous_permission_explanation">这些权限与你的敏感和隐私信息有关。恶意应用可能使用它们破坏你的手机或窃取私人数据。</string>
     <string name="label_change_permissions">修改权限</string>
 
+    <string name="menu_code_title">源代码</string>
     <string name="help_title">帮助</string>
 
     <string name="action_filter">过滤应用</string>
@@ -70,9 +71,9 @@
 
     <string name="update_title">更新内容</string>
     <string-array name="update_items">
-        <item><h>【优化】</h>移除了一些多余的动画</item>
-        <item><h>【优化】</h>下滑重新加载应用和安装包</item>
-        <item><h>【优化】</h>点击安装包位置打开文件管理器浏览(点了没反应？需要装一个文件管理器)</item>
+        <item><h>【新增】</h>应用现在开源啦，可在菜单中查看</item>
+        <item><h>【新增】</h>支持Andorid派</item>
+        <item><h>【新增】</h>新增Android派权限</item>
     </string-array>
 
     <!--<string name="notify_setting_title">通知</string>-->

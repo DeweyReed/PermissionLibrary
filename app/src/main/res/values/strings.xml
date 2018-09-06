@@ -10,6 +10,7 @@
 
     <string name="label_disabled">Disabled</string>
 
+    <string name="menu_code_title">Source Code</string>
     <string name="help_title">Help</string>
 
     <string-array name="help_items">
@@ -86,9 +87,9 @@
     <string name="update_title">Update</string>
 
     <string-array name="update_items">
-        <item><h>Improvement</h> Remove some redundant animation</item>
-        <item><h>Improvement</h> Swipe down to reload apps and APKs</item>
-        <item><h>Improvement</h> Click APK location to view it in an explorer(no response? install an explorer app)</item>
+        <item><h>New</h> This app is now open sourced! You can check in the menu.</item>
+        <item><h>New</h> Android Pie support</item>
+        <item><h>New</h> Add Android Pie new permissions</item>
     </string-array>
 
     <!--<string name="notify_setting_title">Notification</string>-->
@@ -1178,7 +1179,7 @@
     <string name="permlab_manageUsers">Manage users</string>
     <string name="permdesc_manageUsers">Allows apps to manage users on the device, including query, creation and deletion.</string>
 
-    <string name="permlab_com.google.android.c2dm.permission.RECEIVE">receive data from Internet</string>
+    <string name="permlab_com.google.android.c2dm.permission.RECEIVE">Receive data from Internet</string>
     <string name="permdesc_com.google.android.c2dm.permission.RECEIVE">
         Allows apps to accept cloud to device messages sent by the app\'s service.
         Using this service will incur data usage. Malicious apps could cause excess data usage.

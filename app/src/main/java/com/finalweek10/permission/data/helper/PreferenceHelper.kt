@@ -35,8 +35,8 @@ class PreferenceHelper @Inject constructor(context: Context) {
 
         private const val USE_PINYIN = "use_pin_yin"
 
-        private const val UPDATE_OLD = "update_1_37"
-        private const val UPDATE_NEW = "update_1_38"
+        private const val UPDATE_OLD = "update_1_38"
+        private const val UPDATE_NEW = "update_1_4_0"
 
         private fun SharedPreferences.setBoolean(name: String, value: Boolean) {
             edit().putBoolean(name, value).apply()
