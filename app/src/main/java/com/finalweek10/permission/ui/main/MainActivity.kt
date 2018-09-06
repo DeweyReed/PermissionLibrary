@@ -1,5 +1,7 @@
 package com.finalweek10.permission.ui.main
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -78,6 +80,11 @@ class MainActivity : DaggerAppCompatActivity() {
 //            }
             R.id.action_help -> {
                 createHelpDialog()
+                return true
+            }
+            R.id.action_code -> {
+                startActivity(Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://github.com/DeweyReed/PermissionLibrary")))
                 return true
             }
             R.id.action_about -> {
