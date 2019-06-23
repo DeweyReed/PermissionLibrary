@@ -22,6 +22,10 @@
 </div>
 </br>
 
+## Deprecated
+
+I don't have time for maintaining this project. Feel free to fork this project and move on.
+
 ## Screenshot
 
 ||||
