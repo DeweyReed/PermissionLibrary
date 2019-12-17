@@ -28,8 +28,9 @@ class CrashActivity : AppCompatActivity() {
                     .onPositive { dialog, _ ->
                         val emailIntent = Intent(Intent.ACTION_SENDTO)
                         emailIntent.data = Uri.parse("mailto:")
+                        // TODO: Provide your email.
                         emailIntent.putExtra(Intent.EXTRA_EMAIL,
-                                arrayOf("ligrsidfd@gmail.com"))
+                                arrayOf("developer-email@email.com"))
                         emailIntent.putExtra(Intent.EXTRA_SUBJECT,
                                 getString(R.string.crash_email_subject))
                         emailIntent.putExtra(Intent.EXTRA_TEXT,
